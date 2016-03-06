@@ -63,7 +63,7 @@ dev:            false
 name:           noqcks
 
 # Site description, will appear in the document meta and Atom feed subtitle
-description:    I make things that don’t suck.
+description: DevOps engineer from Toronto, CANADA
 
 # Base URL, this is useful when I need to build site in a subdirectory (like GitHub Pages for Projects), it provides a specific URL prefix, for example, if the production site URL is http://sparanoid.com/lab/version/, set `base` to `/lab/version/24`, without trailing slash.
 # Default:      ""
