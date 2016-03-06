@@ -12,12 +12,16 @@ permalink: /
     <h1>
       noqcks
     </h1>
+    <br/ >
+
+    <p><img src="{{ site.file }}/main.jpg" alt="main image"></p>
 
     <small class="latest-post">
       {% for post in site.categories.work limit:1 %}
         Recently made <a href="{{ post.url | prepend: site.base }}" class=latest>{{ post.title }}</a>
       {% endfor %}
     </small>
+
 
   <!--   {% if site.data.curtana.free %}
       <p class="status available"><a href="mailto:{{ site.data.authors.default.email }}">Currently available for freelance</a></p>

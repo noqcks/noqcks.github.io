@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Hubot on Alpine Docker
-category: note
+category: work
+tag: project
 plugin: intense
 ---
 
