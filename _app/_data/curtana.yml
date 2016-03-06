@@ -21,7 +21,7 @@ colorful_list:  true
 
 # Show email subscription link in footer
 # Default:      false
-subscription:   true
+subscription:   false
 
 # Primary color (Safari mask-icon)
 # Default       #ff00b4

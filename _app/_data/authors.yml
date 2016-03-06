@@ -7,10 +7,10 @@
 # {{ author.web }}: used in atom feed
 # {{ author.twitter }}: used by Twitter Cards
 default:
-  name:         Tunghsiao Liu
-  email:        t@sparanoid.com
-  web:          http://sparanoid.com/
-  twitter:      tunghsiao
+  name:         Benji Visser
+  email:        benny@noqcks.io
+  web:          https://noqcks.io/
+  twitter:      noqcks
 
 tester:
   name:         Tester
