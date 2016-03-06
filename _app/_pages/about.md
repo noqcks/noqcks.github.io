@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-desc: 關於・について・Introduction
+desc: 나를・나를・나를
 ---
 
 
