@@ -21,7 +21,6 @@ module.exports = (grunt) ->
       cfg: grunt.file.readYAML("_config.yml")
       pkg: grunt.file.readJSON("package.json")
       amsf: grunt.file.readYAML("_amsf/_config.yml")
-      deploy: grunt.file.readYAML("_deploy.yml")
       app: "<%= config.cfg.source %>"
       dist: "<%= config.cfg.destination %>"
       base: "<%= config.cfg.base %>"
@@ -296,7 +295,7 @@ module.exports = (grunt) ->
 
       serve:
         options:
-          config: "_config.yml,_amsf/_config.yml,<%= config.app %>/_data/<%= amsf.theme.current %>.yml,_config.dev.yml"
+          config: "_config.yml,_amsf/_config.yml,<%= config.app %>/_data/<%= amsf.theme.current %>.yml"
           drafts: true
           future: true
 
@@ -308,18 +307,6 @@ module.exports = (grunt) ->
     shell:
       options:
         stdout: true
-
-      # Direct sync compiled static files to remote server
-      sync_server:
-        command: "rsync -avz -e 'ssh -p <%= config.deploy.sftp.port %>' --delete --progress <%= config.deploy.ignore_files %> <%= config.dist %>/ <%= config.deploy.sftp.user %>@<%= config.deploy.sftp.host %>:<%= config.deploy.sftp.dest %> > rsync-sftp.log"
-
-      # Copy compiled static files to local directory for further post-process
-      sync_local:
-        command: "rsync -avz --delete --progress <%= config.deploy.ignore_files %> <%= jekyll.dist.options.dest %>/ <%= config.deploy.s3_website.dest %>/site/<%= config.base %> > rsync-s3_website.log"
-
-      # Auto commit untracked files sync'ed from sync_local
-      sync_commit:
-        command: "sh <%= config.deploy.s3_website.dest %>/auto-commit '<%= config.pkg.name %>'"
 
       amsf__core__update_deps:
         command: [
@@ -671,10 +658,6 @@ module.exports = (grunt) ->
       "build"
       "shell:sync_local"
     ]
-    if grunt.option("deploy")
-      grunt.task.run [
-        "shell:sync_commit"
-      ]
 
   grunt.registerTask "default", "Default task aka. build task", [
     "build"
