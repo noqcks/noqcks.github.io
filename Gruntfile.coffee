@@ -523,9 +523,9 @@ module.exports = (grunt) ->
         # online: true
         open: true
         browser: [
-          "safari"
+          # "safari"
           "google chrome"
-          "firefox"
+          # "firefox"
         ]
         notify: true
 
