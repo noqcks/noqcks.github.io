@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Gucci
 category: work
 tag: project

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: PHP Dark Launch
 category: work
 tag: commercial

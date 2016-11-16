@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Secret Volume Mounts in Kubernetes
 category: note
 ---

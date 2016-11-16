@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Ansible Role Testing
 category: note
 link: https://github.com/noqcks/ansible-test-kitchen-exmaple

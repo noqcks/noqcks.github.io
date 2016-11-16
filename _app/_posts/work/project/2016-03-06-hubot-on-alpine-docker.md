@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Hubot on Alpine Docker
 category: work
 tag: project

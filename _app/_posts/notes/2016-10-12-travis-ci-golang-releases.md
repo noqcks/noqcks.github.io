@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Dead Simple GitHub Releases for Golang Projects
 category: note
 link: https://github.com/noqcks/gucci
