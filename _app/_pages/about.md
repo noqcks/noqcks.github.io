@@ -13,4 +13,4 @@ A DevOps engineer from Toronto, Canada. You can shoot me an email at [benny@noqc
 [GitHub](http://github.com/noqcks) -
 [LinkedIn](https://ca.linkedin.com/in/bennyvisser) -
 
-All posts are &copy; Benji Visser, all rights reserved. The views expressed on this site are mine alone and not those of my employers and clients, past and present.
+All posts are &copy; Ben Visser, all rights reserved. The views expressed on this site are mine alone and not those of my employers and clients, past and present.

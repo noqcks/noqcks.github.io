@@ -2,7 +2,7 @@
   "name": "noqcks",
   "version": "0.1.0",
   "description": "Jekyll runing on noqcks.io",
-  "author": "Benji Visser",
+  "author": "Ben Visser",
   "homepage": "http://noqcks.io/",
   "main": "Gruntfile.coffee",
   "scripts": {

@@ -7,7 +7,7 @@
 # {{ author.web }}: used in atom feed
 # {{ author.twitter }}: used by Twitter Cards
 default:
-  name:         Benji Visser
+  name:         Ben Visser
   email:        benny@noqcks.io
   web:          https://noqcks.io/
   twitter:      noqcks
