@@ -11,7 +11,7 @@ and rkt (at the moment). In addition to other nice features like easy deployment
 configuration management, service discovery and more, it allows us to manage compute
 resources in a much more effective manner. In this blog post I will explain how the
 Kubernetes resource model works, why you should **ALWAYS** set resource limits on your
-pods, and then show you how you can do exactly that.
+containers, and then show you how you can do exactly that.
 
 ## THE NEED FOR RESOURCE MANAGEMENT
 
