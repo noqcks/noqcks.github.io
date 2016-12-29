@@ -73,6 +73,10 @@ This is why you should **ALWAYS** set both resource requests and resource limits
 
 ## CONTAINER RESOURCE LIMITS
 
+Unfortunately, Kubernetes has not yet implemented dynamic resource management, which is why we have to set resource limits for our containers. I imagine that at some point Kubernetes will start implementing a less manual way to manage resources, but this is all we have for now.
+
+It's a common case that you're trying to deploy a new application and you don't exactly know how many resources it will use. In this case, just try a high estimate and you can always dial it back to a lower limit if need be.
+
 This is an example of a spec setting resource limits on containers in a pod. It has a pod limit of 1000m and 256MiB of memory. It has a pod request of 500m CPU and 128MiB of memory. The request and limit of a pod is always the sum of request and limit of the containers contained within it.
 
 ```
