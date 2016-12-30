@@ -3,19 +3,7 @@ layout: post
 comments: true
 title: Dead Simple GitHub Releases for Golang Projects
 category: note
-link: https://github.com/noqcks/gucci
-excerpt: DEAD SIMPLE GOLANG GITHUB RELEASES
-link: https://github.com/noqcks/gucci
-scheme-text: "#3b1599"
-scheme-link: "#ff3f00"
-scheme-hover: "#ff6300"
-scheme-code: "#ff65d2"
-scheme-bg: "#dbf5ff"
-scheme-bg-light: true
-plugin: lightense
-hidden: true
 ---
-
 
 This is a method I use personally to easily deploy releases to GitHub for a golang project I maintain; you can check out the source [here](https://github.com/noqcks/gucci). It uses travis-ci to do the heavy lifting and binary building and then releases the binaries to GitHub!
 
