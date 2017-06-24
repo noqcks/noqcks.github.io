@@ -17,8 +17,6 @@ containers, and then show you how you can do exactly that.
 
 Before Kubernetes came along, a common method of running containers would be to punt your application container onto an instance and hopefully also set up a monitoring system to automatically restart your container in case it exits. The problem with this model is that your application perhaps only uses 10% of total CPU available on the instance. You're effectively wasting 90% of your CPU resources. With Kubernetes, discrete instances are combined into a pool of compute resources where multiple applications can scheduled to run on one physical instance. It's like "taking a massive pile of wooden blocks (containers/tasks) - blocks of all different shapes and sizes — and finding a way to pack all those blocks into buckets (servers)"¹. If you can arrange these blocks (tasks) very carefully then you can have fewer buckets (servers).
 
-<p><img src="{{ site.file }}/kubernetes/container-scheduling.png" alt="Showing container scheduling"></p>
-
 However, there is a new risk of resource exhaustion that appears when running many containers on one instance. If your container suddenly tries to use 100% of CPU, there is nothing to stop it from exhausting all other containers of their CPU. Well, there is, this is where the Kubernetes resource model comes in. Now that I hooked you with a financial incentive and the risk of resource exhuastion, let me explain how it all works.
 
 ## THE RESOURCE MODEL
@@ -46,9 +44,9 @@ When a container is getting ready to start, the Kubernetes scheduler selects a i
 
 For example, please see the following chart.
 
-<p><img src="{{ site.file }}/kubernetes/resource-relocation.png" alt="Showing container scheduling"></p>
+<p><img src="{{ site.file }}/resource-allocation.jpg" alt="Showing container scheduling"></p>
 
-In the very simplistic example above, container A and B have identical CPU request and CPU limit of 100m and 150m respectively. The space in between the request and limit for each container is a space where Kubernetes resource distributing algorithms live and work to ensure each container receives the resources it needs. In this case, container B requests more resources and Kubernetes throttles container A by 10m and so that container B can use them. This is very simplistic and assumes that no other CPU is available. The algorithms that live in this resource space area little more complicated than explained here.
+In the very simplistic example above, container A and B have identical CPU request and CPU limit of 100m and 150m respectively. The space in between the request and limit for each container is a space where Kubernetes resource distributing algorithms live and work to ensure each container receives the resources it needs.
 
 ## SUPPORTED RESOURCES
 
