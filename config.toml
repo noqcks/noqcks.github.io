@@ -1,0 +1,31 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Benji Visser"
+theme = "hugo-classic"
+googleAnalytics = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+preserveTaxonomyNames = true
+footnotereturnlinkcontents = "↩"
+staticDir = ["static"]
+
+[permalinks]
+    notes = "/notes/:year/:month/:day/:slug/"
+    work = "/work/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "Work"
+    url = "/work/"
+    weight = 2
+[[menu.main]]
+    name = "Notes"
+    url = "/notes/"
+    weight = 2
+
+[params]
+    description = "Benji Visser"
+    footer = "[home](/) | [tags](/tags)"
+
