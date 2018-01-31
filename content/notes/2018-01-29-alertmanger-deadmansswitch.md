@@ -1,6 +1,6 @@
 ---
 title: "Prometheus: Setup A Dead Man's Switch!"
-date: '2018-01-30'
+date: '2018-01-29'
 tags:
   - prometheus
   - alertmanager

@@ -1,7 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "Benji Visser"
-theme = "hugo-classic"
 googleAnalytics = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
@@ -28,4 +27,3 @@ staticDir = ["static"]
 [params]
     description = "Benji Visser"
     footer = "[home](/) | [tags](/tags)"
-
