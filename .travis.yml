@@ -3,13 +3,10 @@ env:
   global:
     secure: S2fDaYgL3bSlcBqd2oBjZ/6IYV7+gxKajuimrqigLTZDsA/b+JLZi5V4fsmAxwKO1LCBKjbanLmnAlJ4SqHXoc1JUExGpZ35P4a0TCCvnWU8/UarMl7mqgQ4I/UMxpio5F5FxXxz4koXuZ3XEyWeT1SAEbcpXWbRw9PXk1FIAKM9CKz/9iwjIsfeS+gIZyK3VBpEB+wJErUMsGl4ZavBhMZI4RJjN7/Mq/jzFZ/AngOLGo7txZOvDbhu2V2nOnHFD1B2wps/bwZqRwa3HOiEBPjUklSTW46NK3LMed8mu26x1udSRM8AlT11Rrfb162mS67tkdL3S2+GUwEDLu3C6iGa3ulwoKGiEn2b++/72md8KUu+DTcGAuJKncAe2XBeKId3FfpZPZfbJdohVTy6r3YatBlPRP+GDg6aTrTBx7B5fYX3Ms0v7oEg7LLgxaN6osyVNqs8cHr2F2LqW3sPS9CESSMLt/jDM16qeVwEgovcgV/FbmO6UgDmvj1HV4Gp+XN9xop8Jfu+ro0Sfr6+qGirtAt9eNfIqZquwutMLHA1WyOT7701cbd3WcqMK6cN3paJaj3BGR0PdKTNR2F48vR0GH2Qnwz9Iw5ebGHQQLQl+aZmvZX57rKjhfLEZ2pw96kHoQqQY8e4GfOO1rdgrLvSQwpqI+7vVGZKdhoSk+w=
 
-services:
-- docker
-
-before_install:
-- openssl aes-256-cbc -K $encrypted_9e4c2d795635_key -iv $encrypted_9e4c2d795635_iv
-  -in client-secret.json.enc -out client-secret.json -d
-- gcloud auth activate-service-account --key-file client-secret.json
+# before_install:
+# - openssl aes-256-cbc -K $encrypted_9e4c2d795635_key -iv $encrypted_9e4c2d795635_iv
+  # -in client-secret.json.enc -out client-secret.json -d
+# - gcloud auth activate-service-account --key-file client-secret.json
 
 install:
 - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.34/hugo_0.34_Linux-64bit.deb
@@ -20,11 +17,14 @@ script:
 
 deploy:
   provider: gcs
-  keyfile: client-secret.json
+  access_key_id: GOOGCECTGLF6CQHBTOJM
+  secret_access_key:
+    secure: K8EnEgfVmot5ggsLBlJ9Ad0QzTypQZPnlZmFICgpQmCt20RwtDfFsc2SmsRV9+qRuP5rlBAfVwBM8ccE7wgBMQ61azcXpOp5Y2bPcWX/JcmPQwla5F8Ro1GhLP2s0WbMwVyoDP8Y0Z/mJlAq9tZiYnAo54j0746ZcYtVd3w+sUa3f7/GqtaFCzgT5R9q+yMIRDgq3CWkQ+MaMH23+MCiVDTOnM8dSypNMxx13fcM/+ctLoGn781QgmJjHM5915a9y76iNvEfG2taLEIloOGpgH1rmOT5OiQAbWzU/yR7ngMgGDIwv7YEHymu9rtEncUyyU+hV5kULWpSkKFmgi4NtrhXDGeBjK8oaz3OOvWQ8RfWoywB90apStds/5q20NQTQOsrEaN9uP4xAWCPcRSS5kkMMDfhCXtmuhqOUW49cUM0kIKIUBMqHn2IjQ5Jmir5xBMnQSI867BUztvwJ7fA21/4nMt6Qy21QcP/suzcX6vw4N2LnBfgRFgbe6zSpaSlGBMBnarKy5+5Dwlx9p9UF7IhFPMFpQ8Qs6KMtfw3Xqnc7CKrJD8LZh36eTrQQ9GzAl9MrrDRnBUXxRYWAN6ACQbETOiDSkKaOaxu4qXhxGSm3gHuaeud1geADjbyPkxfTAw4CShHUrM2flUgKzeErpImgHss1pesMUo6WBE/i4s=
   bucket: www.noqcks.io
-  skip_cleanup: true
   local-dir: public
+  on:
+    repo: noqcks/noqcks.io
 
 after_deploy:
-- "curl -X POST -H 'Fastly-Key: $FASTLY_KEY' -H 'Content-Type:
-  application/json' https://api.fastly.com/service/3RY7GKNsLpZiqvA0xGzDxc/purge_all"
+- 'curl -X POST -H ''Fastly-Key: $FASTLY_KEY'' -H ''Content-Type: application/json''
+  https://api.fastly.com/service/3RY7GKNsLpZiqvA0xGzDxc/purge_all'
