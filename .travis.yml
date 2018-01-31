@@ -1,0 +1,30 @@
+sudo: required
+env:
+  global:
+    secure: S2fDaYgL3bSlcBqd2oBjZ/6IYV7+gxKajuimrqigLTZDsA/b+JLZi5V4fsmAxwKO1LCBKjbanLmnAlJ4SqHXoc1JUExGpZ35P4a0TCCvnWU8/UarMl7mqgQ4I/UMxpio5F5FxXxz4koXuZ3XEyWeT1SAEbcpXWbRw9PXk1FIAKM9CKz/9iwjIsfeS+gIZyK3VBpEB+wJErUMsGl4ZavBhMZI4RJjN7/Mq/jzFZ/AngOLGo7txZOvDbhu2V2nOnHFD1B2wps/bwZqRwa3HOiEBPjUklSTW46NK3LMed8mu26x1udSRM8AlT11Rrfb162mS67tkdL3S2+GUwEDLu3C6iGa3ulwoKGiEn2b++/72md8KUu+DTcGAuJKncAe2XBeKId3FfpZPZfbJdohVTy6r3YatBlPRP+GDg6aTrTBx7B5fYX3Ms0v7oEg7LLgxaN6osyVNqs8cHr2F2LqW3sPS9CESSMLt/jDM16qeVwEgovcgV/FbmO6UgDmvj1HV4Gp+XN9xop8Jfu+ro0Sfr6+qGirtAt9eNfIqZquwutMLHA1WyOT7701cbd3WcqMK6cN3paJaj3BGR0PdKTNR2F48vR0GH2Qnwz9Iw5ebGHQQLQl+aZmvZX57rKjhfLEZ2pw96kHoQqQY8e4GfOO1rdgrLvSQwpqI+7vVGZKdhoSk+w=
+
+services:
+- docker
+
+before_install:
+- openssl aes-256-cbc -K $encrypted_9e4c2d795635_key -iv $encrypted_9e4c2d795635_iv
+  -in client-secret.json.enc -out client-secret.json -d
+- gcloud auth activate-service-account --key-file client-secret.json
+
+install:
+- wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.34/hugo_0.34_Linux-64bit.deb
+- sudo dpkg -i /tmp/hugo.deb
+
+script:
+- hugo
+
+deploy:
+  provider: gcs
+  keyfile: client-secret.json
+  bucket: www.noqcks.io
+  skip_cleanup: true
+  local-dir: public
+
+after_deploy:
+- "curl -X POST -H 'Fastly-Key: $FASTLY_KEY' -H 'Content-Type:
+  application/json' https://api.fastly.com/service/3RY7GKNsLpZiqvA0xGzDxc/purge_all"
