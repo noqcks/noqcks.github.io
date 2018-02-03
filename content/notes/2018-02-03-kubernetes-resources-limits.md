@@ -1,6 +1,6 @@
 ---
 title: Understanding Kubernetes Resources
-date: '2016-12-28'
+date: '2018-02-03'
 tags:
   - kubernetes
   - kubernetes-internal
