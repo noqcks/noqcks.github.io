@@ -1,10 +1,10 @@
 ---
-title: Kubernetes - Understanding Resources
+title: Understanding Kubernetes Resources
 date: '2016-12-28'
 tags:
   - kubernetes
   - kubernetes-internal
-slug: kubernetes-understanding-resources
+slug: understanding-kubernetes-resources
 ---
 
 If you don't already know, [Kubernetes](https://kubernetes.io/) is a container scheduling system for Docker
