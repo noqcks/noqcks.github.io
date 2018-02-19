@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
   <head>
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/google_analytics_async.html" . }}
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
     <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />
     {{ partial "head_custom.html" . }}
-    <!-- Google Analytics -->
-    {{ template "_internal/google_analytics_async.html" . }}
   </head>
 
   <body>
-    <br/>
+  <br/>

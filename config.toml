@@ -6,6 +6,7 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
 staticDir = ["static"]
+disqusShortname = "noqcks-io-1.disqus.com"
 
 [permalinks]
     notes = "/notes/:year/:month/:day/:slug/"
