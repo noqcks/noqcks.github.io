@@ -11,15 +11,15 @@ A Summary of the BeyordCorp paper.
 
 [BeyondCorp: A New Approach to Enterprise Security](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43231.pdf). Ward & Beyer, USENIX DEC 2014
 
-This paper challenges the entire idea of [perimeter security](https://en.wikipedia.org/wiki/Perimeter_Security) for corporate networks, and describes the impentation of BeyondCorp as an alternative.
+This paper challenges the idea of [perimeter security](https://en.wikipedia.org/wiki/Perimeter_Security) for corporate networks, and describes the implementation of BeyondCorp as an alternative.
 
 > "Virtually every company today uses firewalls to enforce perimeter security.”
 
-The problem here is that everyone inside the perimeter is trusted and everyone outside it not! This is false on two fronts; You can have an intruder internally that is not trusted, and you can have a valid employee working from a coffee shop.
+The problem here is that everyone inside the perimeter is trusted and everyone outside is not! This is false on two fronts; You can have an intruder internally that is not trusted, and you can have a valid employee working from a coffee shop for example.
 
 > "The perimeter security model works well enough when all employees work exclusively in buildings owned by an enterprise."
 
-The growth of a mobile workforce and cloud services have challged this perimeter assumption: apps are in public datacentres, and users are working outside the office!
+The growth of a mobile workforce and cloud services have challenged this perimeter assumption: apps are in public datacenters, and users are working outside the office!
 
 BeyondCorp is a model that only depends on `device` and `user` credentials. Location does not matter.
 
@@ -30,7 +30,7 @@ This is a diagram of BeyondCorp.
 <p><img src="/img/beyondcorp-model.png" alt="Screenshot showing beyondcorp"></p>
 
 
-There are 5 major components of BeyondCorp!
+There are 5 major components of BeyondCorp.
 
 #### 1. Identify Device
 
