@@ -31,7 +31,7 @@ The structure of a Merkle Tree "is a tree in which every leaf node is labelled w
 
 The parts of the Merkle tree are the branches (lines between nodes), the nodes, and the root (the very top node).
 
-![](/var/folders/f1/95gsqzd15k58nbm3kvwv4y9r0000gp/T/com.evernote.Evernote/WebKitDnD.Ms7W97/9F6051B1-F384-436D-BDC1-3CA1A16F3B47.png)
+<p><img src="/img/merkle-tree-structure.png" alt="Screenshot showing merkle tree"></p>
 
 The hashes 0-0 and 0-1 are the hash values of the data blocks (data chunks) L1 and L2 respectively. The hash 0 is a concatenation of the hashes 0-0 and 0-1 and so on. By walking this tree, one is able to verify that a data chunk actually exists!
 
