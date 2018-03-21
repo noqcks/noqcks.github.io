@@ -42,7 +42,7 @@ We can describe the specification for a resource in terms of `limit` and `reques
 ## QOS (Quality Of Service)
 
 - **Guaranteed**: When resource limit = request for every container in a pod. Your pod will be guaranteed resources up to the limit, and will only be terminated if it exceeds its limit.
-- **Burstable**: When resource request < limit for every container in a pod. Your pod will be guaranteed resources up to your request, and Kubernates may terminate your pod if it exceeds its request.
+- **Burstable**: When resource request < limit for every container in a pod. Your pod will be guaranteed resources up to your request, and Kubernetes may terminate your pod if it exceeds its request.
 - **BestEffort**: When there are not resource requests or limits set for any container in a pod. Kubernetes will terminate your pod on whim :)
 
 Which QOS you set for your pod depends a little on your situation. If you are senstive to pod restarts, you should use a Guaranteed QOS. If you are not sensitive to pod restarts, then you should use Burstable QOS to utilize the most resources on your cluster. If you are apathetic to life, use BestEffort.
