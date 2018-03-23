@@ -1,5 +1,5 @@
 ---
-title: "How to Secure your Kubernetes cluster with Google Auth"
+title: "How to Secure your Kubernetes Cluster with Google OIDC"
 date: '2018-03-22'
 tags:
   - kubernetes
