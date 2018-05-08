@@ -1,8 +1,16 @@
 body {
   font-family: Optima, Candara, Calibri, Arial, sans-serif;
   font-size: 0.95em;
+  color: rgba(0,0,0,.84);
+  letter-spacing: -.015em;
+}
+main {
+  font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
 }
 code {
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 85%;
+  font-family: Menlo,Monaco,"Courier New",Courier,monospace;
+  font-size: 82%;
+  background-color: #f6f8fa;
+  padding: 3px 4px;
+  margin: 0 2px;
 }
