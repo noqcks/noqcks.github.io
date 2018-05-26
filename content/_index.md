@@ -6,7 +6,7 @@ title: Home
 
 # noqcks
 
-My name is Benji and I work as systems engineer.
+My name is Benji and I work as a systems engineer.
 
 
 <p><b>github</b>: <a href="https://www.github.com/noqcks">https://www.github.com/noqcks</a></p>
