@@ -6,3 +6,6 @@ _The following are my contributions to OSS projects._
 
 # [Kubernetes](https://github.com/kubernetes/kubernetes/)
 - 2018-09-04: https://github.com/kubernetes/kubernetes/commit/f3b98a08b05257fbc3c19b52ced70ea67c546b1e
+
+# [kube-bench](https://github.com/aquasecurity/kube-bench)
+- 2018-10-15: https://github.com/aquasecurity/kube-bench/commit/277ec9c82314eebb66f95576c9ff22d77790c93e
