@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Benji Visser"
+title = "noqcks - Infrastructure Blog"
 googleAnalytics = "UA-74722275-1"
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
@@ -32,3 +32,11 @@ disqusShortname = "noqcks-io-1.disqus.com"
 [params]
     description = "Benji Visser"
     footer = "[home](/) | [tags](/tags)"
+
+[outputs]
+home = [ "RSS"]
+
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"
