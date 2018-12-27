@@ -36,7 +36,7 @@ canonifyURLs = true
     footer = "[home](/) | [tags](/tags)"
 
 [outputs]
-home = [ "RSS"]
+home = [ "RSS", "HTML"]
 
 [outputFormats]
 [outputFormats.RSS]
