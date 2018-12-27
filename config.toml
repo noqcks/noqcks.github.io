@@ -12,7 +12,6 @@ disqusShortname = "noqcks-io-1.disqus.com"
     notes = "/notes/:year/:month/:day/:slug/"
     work = "/work/:year/:month/:day/:slug/"
 
-
 [[menu.main]]
     name = "Home"
     url = "/"
