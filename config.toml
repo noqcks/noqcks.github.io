@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "noqcks - Infrastructure Blog"
+title = "noqcks' Infrastructure Safe Haven"
 googleAnalytics = "UA-74722275-1"
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
@@ -8,6 +8,7 @@ footnotereturnlinkcontents = "↩"
 staticDir = ["static"]
 disqusShortname = "noqcks-io-1.disqus.com"
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License"
+canonifyURLs = true
 
 [permalinks]
     notes = "/notes/:year/:month/:day/:slug/"
