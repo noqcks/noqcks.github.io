@@ -29,7 +29,6 @@ disqusShortname = "noqcks-io-1.disqus.com"
     url = "/oss-contrib/"
     weight = 2
 
-
 [params]
     description = "Benji Visser"
     footer = "[home](/) | [tags](/tags)"

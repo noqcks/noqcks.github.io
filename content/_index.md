@@ -6,15 +6,14 @@ title: Home
 
 # noqcks
 
-My name is Benji and I work as a systems engineer.
-
+My name is Benji and I work as a Site Reliability Engineer.
 
 <p><b>github</b>: <a href="https://www.github.com/noqcks">https://www.github.com/noqcks</a></p>
 <p><b>twitter</b>: <a href="https://twitter.com/noqcks">https://twitter.com/noqcks</a></p>
 <p><b>kaggle</b>: <a href="https://www.kaggle.com/noqcks">https://www.kaggle.com/noqcks</a></p>
 <p><b>goodreads</b>: <a href="https://www.goodreads.com/user/show/74812155-benji-visser">https://www.goodreads.com/user/show/74812155-benji-visser</a></p>
 
-<img src="img/main.jpg" style="max-width:80%;min-width:40px;text-align:left;">
+<img src="img/main.jpg" style="max-width:60%;min-width:40px;text-align:left;">
 
 <hr/>
 
