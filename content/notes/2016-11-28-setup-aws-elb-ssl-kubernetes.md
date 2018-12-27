@@ -13,7 +13,7 @@ slug: setup-aws-elb-ssl-kubernetes
 I want to setup HTTP on port 80 and SSL on port 443 and then route both on TCP
 to my backend servers in AWS, like so:
 
-<p><img src="/img/k8s-aws-elb.png" alt="Screenshot showing aws elb"></p>
+<p><img src="https://www.noqcks.io/img/k8s-aws-elb.png" alt="Screenshot showing aws elb"></p>
 
 To do this with Kubernetes, I need the following service definition:
 

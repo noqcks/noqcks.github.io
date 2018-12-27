@@ -27,7 +27,7 @@ BeyondCorp is a model that only depends on `device` and `user` credentials. Loca
 
 This is a diagram of BeyondCorp.
 
-<p><img src="/img/beyondcorp-model.png" alt="Screenshot showing beyondcorp"></p>
+<p><img src="https://www.noqcks.io/img/beyondcorp-model.png" alt="Screenshot showing beyondcorp"></p>
 
 
 There are 5 major components of BeyondCorp.

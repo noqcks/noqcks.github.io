@@ -39,7 +39,7 @@ us if our DeadMansSwitch alert in Alertmanager has been silent 3 times, and allo
 the unreliability of email, which we'll use from AlertManager to DeadMansSnitch
 in want of a better option.
 
-<p><img src="/img/deadmanssnitch.png" alt="Screenshot showing deadmanssnitch"></p>
+<p><img src="https://www.noqcks.io/img/deadmanssnitch.png" alt="Screenshot showing deadmanssnitch"></p>
 
 In AlertManager, this will be our config. You will need to replace the `to:` email
 to the DeadMansSnitch email for your account.
@@ -65,7 +65,7 @@ receivers:
 
 You now have Prometheus/Alertmanager triggering DeadMansSnitch!
 
-<p><img src="/img/deadmanssnitch-green.png" alt="Screenshot showing deadmanssnitch"></p>
+<p><img src="https://www.noqcks.io/img/deadmanssnitch-green.png" alt="Screenshot showing deadmanssnitch"></p>
 
 You can now setup a [Pagerduty integration](https://www.pagerduty.com/docs/guides/dead-mans-snitch-integration-guide/)
 to page you when the DeadMansSwitch fails.

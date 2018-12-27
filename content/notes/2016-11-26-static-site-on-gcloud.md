@@ -64,7 +64,7 @@ We can go [here](https://app.fastly.com/#quickstart) to set up the fastly config
 for our site. Fill it out according to your site like so:
 
 
-<p><img src="/img/fastly-setup.png" alt="Screenshot showing fastly setup"></p>
+<p><img src="https://www.noqcks.io/img/fastly-setup.png" alt="Screenshot showing fastly setup"></p>
 
 And we're done! You can now point your DNS name to use the fastly CDN
 
@@ -77,10 +77,10 @@ I took some screenshots of the performance before and after using fastly. The
 performance gained is crazy...
 
 This is before:
-<p><img src="/img/www.noqcks.io-page-speed-before.png" alt="Screenshot showing page speed before fastly"></p>
+<p><img src="https://www.noqcks.io/img/www.noqcks.io-page-speed-before.png" alt="Screenshot showing page speed before fastly"></p>
 
 
 And this is after:
-<p><img src="/img/www.noqcks.io-page-speed-after.png" alt="Screenshot showing page speed after fastly"></p>
+<p><img src="https://www.noqcks.io/img/www.noqcks.io-page-speed-after.png" alt="Screenshot showing page speed after fastly"></p>
 
 

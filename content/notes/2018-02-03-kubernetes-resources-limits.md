@@ -53,7 +53,7 @@ When a container is getting ready to start, the Kubernetes scheduler selects a i
 
 For example, please see the following chart.
 
-<p><img src="/img/resource-allocation.jpg" alt="Showing container scheduling"></p>
+<p><img src="https://www.noqcks.io/img/resource-allocation.jpg" alt="Showing container scheduling"></p>
 
 In the very simplistic example above, container A and B have identical CPU request and CPU limit of 100m and 150m respectively. The space in between the request and limit for each container is a space where Kubernetes resource distributing algorithms live and work to ensure each container receives the resources it needs.
 

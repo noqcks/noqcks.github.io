@@ -7,6 +7,6 @@ tags:
 slug: hubot-in-alpine-docker
 ---
 
-<p><img src="/img/alpine-docker-size-comparison.png" alt="Screenshot comparing docker image sizes"></p>
+<p><img src="https://www.noqcks.io/img/alpine-docker-size-comparison.png" alt="Screenshot comparing docker image sizes"></p>
 
 <p>alpine hubot github <a href="https://github.com/noqcks/alpine-hubot">here</a></p>

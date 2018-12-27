@@ -16,7 +16,7 @@ The data that's given by the Open Data team at the City of Toronto is in the
 coordinate system `MTM NAD 27(3 degree)` which lists coordinates in Easting and
 Northing of a specific point.
 
-<p><img src="/img/watermain_breaks.png" alt="Screenshot of watermain_breaks"></p>
+<p><img src="https://www.noqcks.io/img/watermain_breaks.png" alt="Screenshot of watermain_breaks"></p>
 
 This isn't very useful when you want to see locations on google maps which uses
 the Longitude and Latitude coordinate system (formally called `WGS84`).

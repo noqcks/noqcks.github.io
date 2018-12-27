@@ -13,6 +13,6 @@ the cost associated with inter-region calls.</p>
 
 <p><a href="http://gcp.latenci.es/">http://gcp.latenci.es</a>
 
-<p><img src="/img/google-inter-region-latency.png" alt="Screenshot of google inter-region latency"></p>
+<p><img src="https://www.noqcks.io/img/google-inter-region-latency.png" alt="Screenshot of google inter-region latency"></p>
 
 <p>project on github is <a href="https://github.com/noqcks/gcp_latency">here</a></p>
