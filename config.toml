@@ -7,6 +7,7 @@ preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
 staticDir = ["static"]
 disqusShortname = "noqcks-io-1.disqus.com"
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License"
 
 [permalinks]
     notes = "/notes/:year/:month/:day/:slug/"
