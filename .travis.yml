@@ -3,8 +3,7 @@ install:
 - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.34/hugo_0.34_Linux-64bit.deb
 - sudo dpkg -i /tmp/hugo.deb
 
-script:
-- hugo
+before_deploy: hugo
 
 deploy:
   provider: firebase
