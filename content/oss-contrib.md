@@ -1,4 +1,6 @@
-_The following are some of my larger contributions to OSS projects._
+_The following are some of my larger contributions to OSS projects. I believe that Open Source
+Software is important philosophically and economically and I try my best to give back
+every so often!_
 
 # [Prometheus](https://github.com/prometheus/prometheus/)
 - 2018-08-04: https://github.com/prometheus/prometheus/commit/8bb6e0dd6e80ab2b9719d2e2e6a762f9f29575d6
