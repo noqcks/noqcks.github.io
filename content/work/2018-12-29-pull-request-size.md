@@ -12,7 +12,7 @@ large your Pull Requests are based on the lines of code changed.
 <p><img src="https://user-images.githubusercontent.com/4740147/47858607-d7e05f80-ddc2-11e8-97d9-247033cc9a12.png" alt="Screenshot of pull-request-size"></p>
 
 
-This is almost entirely borrowed from how [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes) sizes their pull request, and it's where I originally had the idea.
+This is almost entirely borrowed from how [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes) sizes their pull request, and it's where I originally had the idea. I just managed to turn it into a GitHub application that anyone can install and use. You can find the Privacy Policy for the GitHub application [here](https://github.com/noqcks/pull-request-size/blob/master/PRIVACY.md).
 
 I've found that it's a helpful reminder to always keep Pull Requests as small as
 possible! I think we know this scenario all too well.
@@ -21,3 +21,4 @@ possible! I think we know this scenario all too well.
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <p>The project is on github at <a href="https://github.com/noqcks/pull-request-size">https://github.com/noqcks/pull-request-size</a>.</p>
+
