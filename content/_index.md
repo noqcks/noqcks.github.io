@@ -14,7 +14,8 @@ title: Home
   </span>
 </p>
 
-My name is Benji and I work as a Site Reliability Engineer.
+
+I'm learning in public.
 
 <p><b>github</b>: <a href="https://www.github.com/noqcks">https://www.github.com/noqcks</a></p>
 <p><b>twitter</b>: <a href="https://twitter.com/noqcks">https://twitter.com/noqcks</a></p>
